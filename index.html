@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        
+        <title>Дмитрий Алексеев</title>
+        <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon"> 
+        <meta name="Description" content="Сайт Frontend-разработчика и веб-верстальщика Дмитрия Алексеева">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="preload" href="./fonts/Roboto-Regular.woff2" as="font">
+        <link rel="preload" href="./fonts/Roboto-Bold.woff2" as="font">
+        <link rel="preload" href="./fonts/Roboto-Medium.woff2" as="font">        
+        <link rel="preload" href="./fonts/Roboto-Black.woff2" as="font">
+        
+        <link rel="stylesheet" href="./css/style.min.css">
+
+        <script defer src="./js/all.min.js"></script>
+    </head>
+    
+    <body class="no-js">
+        <header class="header">
+            <div class="header__bar js-header__bar">
+                <div class="container header__container">
+                    <button class="btn header__burger js-btnMenu" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="bar-nav"></button>
+
+                    <nav class="nav header__nav js-nav" id="bar-nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a classhref="#page1" class="nav__link">Услуги</a>
+                            </li>
+
+                            <li class="nav__item">
+                                <a href="#page2" class="nav__link">Портфолио</a> 
+                            </li>
+
+                            <li class="nav__item">
+                                <a href="#page3" class="nav__link">Стоимость</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="adress header__adress">
+                        <address class="adress__tel">
+                            <a class="adress__link" href="tel:+7(499)955-55-77" >+7(499)955-55-77</a>
+                        </address>
+
+                        <button class="btn header__btn js-open-modal" type="button" aria-label="Заказать звонок">Заказать звонок</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-base">
+                <div class="container">
+                    <h1 class="title">Дмитрий Алексеев
+                        <span class="title__span">Frontend-разработчик и веб-верстальщик</span>
+                    </h1>
+
+                    <a href="#page1" class="btn btn_orange header-base__btn">Узнать больше</a>                    
+                    
+                    <picture>
+                        <source 
+                            media="(max-width: 1023px)"
+                            type="image/webp"
+                            srcset="./img/foto-tel@1x.webp 1x, ./img/foto-tel@2x.webp 2x">
+                        
+                        <source
+                            type="image/webp" 
+                            srcset="./img/foto@1x.webp 1x, ./img/foto@2x.webp 2x">    
+
+                        <source 
+                            media="(max-width: 1023px)" 
+                            srcset="./img/foto-tel@1x.png 1x, ./img/foto-tel@2x.png 2x">
+                    
+                        <img class="base-foto" 
+                            src="./img/foto@1x.png" 
+                            srcset="./img/foto@2x.png 2x"
+                            alt="Фотография Дмитрия Алексеева">
+                    </picture>
+
+                    <div class="fly-elements fly-elements_header-base">
+                        <div class="fly-elements__element fly-elements__element_0">{ }</div>
+                        <div class="fly-elements__element fly-elements__element_1">&lt;div&gt;</div>
+                        <div class="fly-elements__element fly-elements__element_2">&lt;/&gt;</div>
+                        <div class="fly-elements__element fly-elements__element_3">&lt;div&gt;</div>
+                        <div class="fly-elements__element fly-elements__element_4">#</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <main class="main">
+            <section id="page1" class="page-section skills">
+                <div class="container">
+                    <h2 class="page-section__title skills__title">Что я делаю</h2>
+
+                    <ul class="skills__list">
+                        <li class="skills__item">Вёрстка лендинг - страниц и сайтов любой сложности</li>
+
+                        <li class="skills__item">Адаптивная вёрстка под все браузеры и устройства</li>
+
+                        <li class="skills__item">Frontend - разработка и программирование</li>
+
+                        <li class="skills__item">Исправление и доработка существующей вёрстки</li>
+                    </ul>
+
+                    <a href="#page3" class="btn btn_orange skills__btn">Узнать стоимость</a>
+                </div>
+            </section>
+
+            <section id="page2" class="page-section examples">
+                <div class="container">
+                    <h2 class="page-section__title examples__title">Примеры моих работ</h2>
+
+                    <div class="swiper">
+                        <div class="swiper-container">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <figure class="swiper-figure">
+                                        <picture>
+                                            <source
+                                                type="image/webp" 	
+                                                srcset="./img/Example1@1x.webp 1x, ./img/Example1@2x.webp 2x">
+                                            
+                                            <img class="swiper-img"
+                                                src="./img/Example1@1x.png" 
+                                                srcset="./img/Example1@2x.png 2x"
+                                                alt="Главная страница сайта психолога Веры Антоновой">
+                                        </picture>
+        
+                                        <figcaption class="swiper-figcaption">Сайт психолога Веры Антоновой</figcaption>
+                                    </figure>
+                                </li>
+
+                                <li class="swiper-slide">
+                                    <figure class="swiper-figure">
+                                        <picture>
+                                            <source
+                                                type="image/webp" 	
+                                                srcset="./img/Example2@1x.webp 1x, ./img/Example2@2x.webp 2x">
+                                            
+                                            <img class="swiper-img"
+                                                src="./img/Example2@1x.png" 
+                                                srcset="./img/Example2@2x.png 2x"
+                                                alt="Главная страница сайта магазина детской одежды">
+                                        </picture>
+        
+                                        <figcaption class="swiper-figcaption">Сайт магазина детской одежды</figcaption>
+                                    </figure>
+                                </li>
+
+                                <li class="swiper-slide">
+                                    <figure class="swiper-figure">
+                                        <picture>
+                                            <source
+                                                type="image/webp" 	
+                                                srcset="./img/Example3@1x.webp 1x, ./img/Example3@2x.webp 2x">
+                                            
+                                            <img class="swiper-img"
+                                                src="./img/Example3@1x.png" 
+                                                srcset="./img/Example3@2x.png 2x"
+                                                alt="Главная страница сайта магазина Рыболов">
+                                        </picture>
+        
+                                        <figcaption class="swiper-figcaption">Сайт магазина &#171;Рыболов&#187;</figcaption>
+                                    </figure>
+                                </li>
+                            </ul>
+                           
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    
+                        <button class="btn swiper__btn-control swiper__btn-control_left" type="button" aria-label="Влево"></button>
+                        
+                        <button class="btn swiper__btn-control swiper__btn-control_right" type="button" aria-label="Вправо"></button>
+                    </div>                        
+
+                    <button class="btn btn_orange examples__btn js-open-modal" type="button">Заказать проект</button>
+                </div>
+            </section>
+
+            <section id="page3" class="offer">
+                <div class="container offer__container">
+                    <h2 class="visually-hidden">Предложение услуги</h2>
+                        
+                    <p class="offer__title">Адаптивная верстка под все устройства и браузеры от 1000 рублей всего за 4 часа.*</p>  
+                    
+                    <p class="offer__note">
+                        <small class="offer__small">Срок и стоимость могут отличаться от заявленных и расчитываются индивидуально, в зависимости от сложности задач</small>
+                    </p>
+
+                    <div class="fly-elements fly-elements_offer">
+                        <div class="fly-elements__element fly-elements__element_0">{ }</div>
+                        <div class="fly-elements__element fly-elements__element_1">&lt;div&gt;</div>
+                        <div class="fly-elements__element fly-elements__element_2">&lt;/&gt;</div>
+                        <div class="fly-elements__element fly-elements__element_3">{ }</div>
+                        <div class="fly-elements__element fly-elements__element_4">#</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-master">
+                <div class="container footer__container">
+                    <nav class="nav footer__nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#page1" class="nav__link">Услуги</a>
+                            </li>
+
+                            <li class="nav__item">
+                                <a href="#page2" class="nav__link">Портфолио</a> 
+                            </li>
+
+                            <li class="nav__item">
+                                <a href="#page3" class="nav__link">Стоимость</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <address class="adress footer__adress">
+                        <ul class="adress__list">
+                            <li class="adress__item">
+                                <a class="adress__tel" href="tel:+7(499)955-55-77">+7 (499) 955-77-55</a>
+                            </li>							
+                            
+                            <li class="adress__item">
+                                <a class="adress__mailto" href="mailto:dmitry@alekseev.com">dmitry@alekseev.com</a>
+                            </li>
+                        </ul>
+                    </address>
+
+                    <div class="footer__link">
+                        <button class="btn footer__btn js-open-modal" type="button">Заказать звонок</button>
+
+                        <ul class="link-social">
+                            <li class="link-social__item">
+                                <a class="link-social__link link-social__link_0" href="#" target="_blank" aria-label="Дмитрий Алексеев во Вконтакте"></a>
+                            </li>
+                            
+                            <li class="link-social__item">
+                                <a class="link-social__link link-social__link_1" href="#" target="_blank" aria-label="Дмитрий Алексеев в Фейсбуке"></a>
+                            </li>
+                            
+                            <li class="link-social__item">
+                                <a class="link-social__link link-social__link_2" href="#" target="_blank" aria-label="Дмитрий Алексеев в Твиттере"></a>
+                            </li>
+                            
+                            <li class="link-social__item">
+                                <a class="link-social__link link-social__link_3" href="#" target="_blank" aria-label="Дмитрий Алексеев в Инстаграме"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>        
+            </div>
+
+            <div class="copy">
+				<div class="container">
+					<p class="copy__p">&#169; Дмитрий Алексеев, 2016 - 1018</p>	
+				</div>
+			</div>		
+        </footer>
+        
+        <div class="modal js-modal" role="dialog" aria-modal="false">            
+            <button class="btn modal__btn js-close-modal" type="button" aria-label="Закрыть окно"></button>
+            
+            <h2 class="modal__title">Заказать звонок</h2>
+
+            <form class="modal__form" method="post" action="https://echo.htmlacademy.ru">
+            
+                <label class="modal__label">
+                    <span>Ваше имя</span>  
+                    <input class="modal__name" type="text" name="Name" required="required">
+                </label>
+
+                <label class="modal__label"> 
+                    <span>Номер телефона</span>
+                    <input class="maodal__tel" type="tel" name="tel" placeholder="+7 (___) ___-__-__" required="required">
+                </label>
+
+                <label class="modal__label">  
+                    <span>Адрес электронной почты</span>
+                    <input class="maodal__email" type="email" name="email">
+                </label>
+                
+                <button class="btn btn_orange modal__submit" type="submit">Отправить</button>
+            </form>            
+        </div> 
+
+        <div class="modal-overlay js-modal-overlay"></div>
+    </body>
+</html>
