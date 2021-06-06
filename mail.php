@@ -10,4 +10,4 @@ $message = wordwrap($message, 70, "\r\n");
 
 mail('kotor79@gmail.com', 'Dmitry Alekseev', $message);
 
-header ('Location: /dmitryAlekseev/');
+header ('Location: ./');
