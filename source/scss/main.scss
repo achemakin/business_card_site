@@ -1,0 +1,14 @@
+.main {    
+    padding: 87px 0 0;    
+    position: relative;     
+
+    background-color: $colorFont;    
+    
+    @media #{$break-tablet} {
+        padding: 85px 0 0;
+    }
+
+    @media #{$break-tel} {
+        padding: 43px 0 0;
+    }
+}

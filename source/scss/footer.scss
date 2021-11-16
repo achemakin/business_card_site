@@ -1,0 +1,118 @@
+footer {
+    padding: 77px 0 0;
+
+    @media (max-width: $width-l - 1) {
+        padding: 100px 0 0;
+    }
+    
+    @media (max-width: $width-m - 1) {
+        padding: 46px 0 0;
+    }
+}
+
+.footer__container{
+    padding-bottom: 61px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media (max-width: $width-l - 1) {
+        padding-bottom: 62px;
+    }
+
+    @media (max-width: $width-m - 1) {
+        padding-bottom: 39px;
+    }
+}
+
+.footer__nav {
+    width: 23%;
+    margin-top: 6px;
+    
+    @media (max-width: $width-m - 1) {
+        width: 100%;
+        margin-top: 0;
+    }
+    
+    .nav__list {
+        flex-direction: column;
+
+        @media (max-width: $width-m - 1) {
+            font-size: 15px;
+        }
+    }   
+    
+    .nav__item {
+        max-width: 40%;
+        margin: 0 0 15px;
+        
+        @media (max-width: $width-m - 1) {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.footer__adress {
+    width: 31.5%;
+    margin-top: 6px;
+    
+    @media (max-width: $width-l - 1) {
+        margin-top: 5px;
+        width: 37.8%;
+    }
+
+    @media (max-width: $width-m - 1) {
+        margin-top: 27px;
+        width: 100%;  
+    }
+
+    .adress__tel {
+        padding-left: 38px;
+        
+        letter-spacing: -0.4px;
+        background-image: url("../img/call-answer.png");
+        background-position: left;
+        background-repeat: no-repeat;
+
+        @media (max-width: $width-m - 1) {
+            padding-left: 33px;
+            
+            font-size: 20px;
+            background-size: 13px;
+        }
+    }  
+}
+
+.footer__link {
+    width: 23.21%;
+
+    @media (max-width: $width-l - 1) {
+        width: 26.2%;
+    }
+
+    @media (max-width: $width-m - 1) {
+        width: 100%;
+    }
+}
+
+.footer__btn{
+    margin-left: 2px;
+    padding: 13px 40px 12px;
+    width: 248px;
+
+    @media #{$break-tablet} {
+        margin-left: 0;
+    }
+
+    @media #{$break-tel} {
+        width: 280px;
+
+        padding: 18px 19px 18px;
+        
+        font-size: 16px;
+        color: $colorFont;
+        background-color: $colorBase;
+        border: none;
+    }
+}

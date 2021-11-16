@@ -1,0 +1,30 @@
+@mixin fontRoboto($f) {
+    font-weight: $f;     
+    font-style: normal;     
+    font-family: "Roboto";  
+    font-display: swap;
+}
+
+@mixin container($w, $pa, $pb) {
+    width: $w;
+    max-width: 100%;
+	padding: $pa $pb;
+}
+
+@mixin flyNullHeader {
+    bottom: -270px;
+    left: 50%;
+    transform: rotate(0);
+}
+
+@mixin flyNull {
+    bottom: -120px;
+    left: 50%;
+    transform: rotate(0);
+}
+
+@mixin fly($bottom, $left, $deg) {
+    bottom: $bottom;
+    left: $left;
+    transform: rotate($deg);
+}    

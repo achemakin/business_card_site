@@ -1,0 +1,14 @@
+// ширина контейнера
+$width-l: 1330px;
+$width-m: 1024px;
+$width-s: 320px;
+
+// breakpoint
+$break-tablet: "(max-width: #{$width-l - 1})";
+$break-tel: "(max-width: #{$width-m - 1})";
+
+// цвета
+$colorFont: #fff;
+$colorText: #8993ad;
+$colorBase: #ff4e2e;
+$colorMenuActive: #fc557c;

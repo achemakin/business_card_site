@@ -1,0 +1,48 @@
+.adress__tel {
+    font-size: 25px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 1.1px;
+}
+
+.adress__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+    font-size: 25px;
+    font-style: normal;
+    
+    @media #{$break-tel} {
+        font-size: 20px;
+        color: $colorText;
+    }
+}
+
+.adress__item {
+    margin-bottom: 29px;
+
+    @media #{$break-tel} {
+        margin-bottom: 22px;
+    }
+    
+    &:last-child {
+        @media #{$break-tel} {
+            margin-bottom: 25px;
+        }
+    }
+}
+
+.adress__mailto {
+    padding-left: 44px;
+    
+    background-image: url("../img/envelope.png");
+    background-position: 0 10px;
+    background-repeat: no-repeat;
+
+    @media #{$break-tel} {
+        padding-left: 33px;
+
+        background-size: 14px;
+    }
+}

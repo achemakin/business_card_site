@@ -1,0 +1,51 @@
+<!-- Открытие модального окна в случае no-js-->
+<!DOCTYPE html>
+
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        
+        <title>Дмитрий Алексеев</title>
+        <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon"> 
+        <meta name="Description" content="Сайт Frontend-разработчика и веб-верстальщика Дмитрия Алексеева">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="preload" href="./fonts/Roboto-Regular.woff2" as="font">
+        <link rel="preload" href="./fonts/Roboto-Bold.woff2" as="font">
+        <link rel="preload" href="./fonts/Roboto-Medium.woff2" as="font">        
+        <link rel="preload" href="./fonts/Roboto-Black.woff2" as="font">
+        
+        <link rel="stylesheet" href="./css/style.min.css">
+    </head>
+
+    <body>
+        <div class="modal active" role="dialog" aria-modal="false">            
+            <a href="./index.html" class="btn modal__btn" aria-label="Закрыть окно"></a>
+            
+            <h2 class="modal__title">Заказать звонок</h2>
+
+            <form class="modal__form" method="post" action="https://echo.htmlacademy.ru">
+            
+                <label class="modal__label">
+                    <span>Ваше имя</span>  
+                    <input class="modal__name" type="text" name="Name" required="required">
+                </label>
+
+                <label class="modal__label"> 
+                    <span>Номер телефона</span>
+                    <input class="maodal__tel" type="tel" name="tel" placeholder="+7 (___) ___-__-__" required="required">
+                </label>
+
+                <label class="modal__label">  
+                    <span>Адрес электронной почты</span>
+                    <input class="maodal__email" type="email" name="email">
+                </label>
+                
+                <button class="btn btn_orange modal__submit" type="submit">Отправить</button>
+            </form>            
+        </div> 
+
+        <div class="modal-overlay active"></div>
+    </body>
+</html>
